@@ -1,8 +1,145 @@
+<head>
+	<meta charset="utf-8">
+</head>
 <html>
-      <head>
-          <meta charset="UTF-8">
-      </head>
-      <body>
-          Moja pierwsza strona internetowa.
-      </body>
+    <link rel="stylesheet" type="text/css" href="clock-style.css">
+    
+<body>
+    <!--MAIN CLOCK PANEL -->
+    <div class="cubePozition1 ">
+        <div class="flexcontainer">
+            <div class="p1">
+                <div class="hour16 circle"></div>
+                <p>16</p>
+            </div>
+            <div class="p2">
+                <div class="hour8 circle"></div>
+                <p>8</p>
+            </div>
+            <div class="p3">
+                <div class="hour4 circle"></div>
+                <p>4</p>
+            </div>
+            <div class="p4">
+                <div class="hour2 circle"></div>
+                <p>2</p>
+            </div>
+            <div class="p5">
+                <div class="hour1 circle"></div>
+                <p>1</p>
+            </div>
+        </div>
+        <div class="flexcontainer">
+            <div class="p6">
+                <div class="minutes32 circle"></div>
+                <p>32</p>
+            </div>
+            <div class="p7">
+                <div class="minutes16 circle"></div>
+                <p>16</p>
+            </div>
+            <div class="p8">
+                <div class="minutes8 circle"></div>
+                <p>8</p>
+            </div>
+            <div class="p9">
+                <div class="minutes4 circle"></div>
+                <p>4</p>
+            </div>
+            <div class="p10">
+                <div class="minutes2 circle"></div>
+                <p>2</p>
+            </div>
+            <div class="p11">
+                <div class="minutes1 circle"></div>
+                <p>1</p>
+            </div>
+        </div>
+        <div class="progresBarTxt">
+            <div class="txt1">
+                <div>
+                    <p id="startOfClasses">a</p>
+                </div>
+            </div>
+            <div class="progress-location">
+                <div class="progress-background" id="progressBackground">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <p id="TextUnderBack"></p>
+            </div>
+            <div class="txt2">
+                <div>
+                    <p id="endOfClasses"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+<div id="hourClassesModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <table>
+  <tr>
+    <th>Godziny zajęć</th>
+    <th>Czas trwania zajęć</th>
+  </tr>
+  <tr>
+    <td>1. godzina</td>
+    <td>08:05 - 08:50</td>
+  </tr>
+          <tr>
+    <td>2. godzina</td>
+    <td>08:55 - 09:40</td>
+  </tr>
+          <tr>
+    <td>3. godzina</td>
+    <td>09:50 - 10:35</td>
+  </tr>
+          <tr>
+    <td>4. godzina</td>
+    <td>10:40 - 11:25</td>
+  </tr>
+          <tr>
+    <td>5. godzina</td>
+    <td>11:35 - 12:20</td>
+  </tr>
+          <tr>
+    <td>6. godzina</td>
+    <td>12:25 - 13:10</td>
+  </tr>
+          <tr>
+    <td>7. godzina</td>
+    <td>13:20 - 14:05</td>
+  </tr>
+          <tr>
+    <td>8. godzina</td>
+    <td>14:10 - 14:55</td>
+  </tr>
+          <tr>
+    <td>9. godzina</td>
+    <td>15:05 - 15:50</td>
+  </tr>
+                  <tr>
+    <td>10. godzina</td>
+    <td>16:00 - 16:45</td>
+  </tr>
+                  <tr>
+    <td>11. godzina</td>
+    <td>16:50 - 17:35</td>
+  </tr>
+                  <tr>
+    <td>12. godzina</td>
+    <td>17:40 - 18:25</td>
+  </tr>
+</table>
+      <br>
+  </div>
+
+</div>
+    <script src="clock.js"></script>
+    <script src="popupMenu.js"></script>
+</body>
+
 </html>
