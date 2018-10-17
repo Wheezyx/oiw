@@ -34,11 +34,9 @@ function start_clock() {
     if (currentMinutes < 10) {
         currentMinutes = "0" + currentMinutes;
     }
-
     if (progression == 0 || progression == 45) {
         checkClassesHour(currentHour, currentMinutes);
         frame();
-
     } else if (currentSeconds == 0) {
         progression++;
         checkClassesHour(currentHour, currentMinutes);
@@ -63,6 +61,7 @@ function frame() {
 }
 
 function checkClassesHour(currentHour, currentMinutes) {
+    console.log("W checkClass: " + currentHour + currentMinutes)
     if ((currentHour == 8 && currentMinutes >= 5) && (currentHour == 8 && currentMinutes < 50)) {
         if (progession == 0) {
             progression = currentMinutes - 5;
@@ -80,16 +79,16 @@ function checkClassesHour(currentHour, currentMinutes) {
         if (progression == 0) {
             if (currentHour == 10)
                 progression = currentMinutes + 10;
-        } else {
-            progression = currentMinutes - 50;
+            else
+                progression = currentMinutes - 50;
         }
         displayClassesHour("09:50", "10:35", (45 - progression).toString());
     } else if ((currentHour == 10 && currentMinutes >= 40) || (currentHour == 11 && currentMinutes < 25)) {
         if (progression == 0) {
             if (currentHour == 11)
                 progression = currentMinutes + 20;
-        } else {
-            progression = currentMinutes - 40;
+            else
+                progression = currentMinutes - 40;
         }
         displayClassesHour("10:40", "11:25", (45 - progression).toString());
     } else if ((currentHour == 11 && currentMinutes >= 35) || (currentHour == 12 && currentMinutes < 20)) {
