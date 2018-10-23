@@ -1,0 +1,351 @@
+/*
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+*/
+
+.clearfix::after {
+     content: "";
+     display: block;
+     clear: both;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html {
+     max-width: 1920px;
+     margin: 0 auto;
+}
+
+header {
+     height: 90vh;
+     position: relative;
+     background-color: #29a6dc;
+     overflow: hidden;
+}
+
+header > * {
+     position: absolute;
+}
+
+header img {
+     position: absolute;
+     height: 50%;
+     bottom: 0;
+     right: 0;
+}
+
+header div.welcome {
+     top: 7%;
+     left: 5%;
+     right: 5%;
+     z-index: 1;
+     text-align: center;
+     font-family: 'Saira Condensed', sans-serif;
+     font-weight: bold;
+     font-size: 40px;
+     text-transform: uppercase;
+     color: #fff;
+}
+
+.button_send_created {
+width: 80%;
+height: 70%;
+position: fixed;
+background-color: black;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+header h1 {
+     font-size: 15px;
+     margin-top: 20px;
+}
+
+header h2 {
+     font-size: 20px;
+     font-weight: normal;
+}
+
+header button {
+     font-family: 'Saira', sans-serif;
+     font-weight: 300;
+     line-height: 32px;
+     padding: 0 20px;
+     text-transform: uppercase;
+     color: #fff;
+     background-color: transparent;
+     font-size: 12px;
+     border: 2px solid #fff;
+}
+
+section {
+     min-height: 30vh;
+
+}
+
+/*
+Sekcja nasze cechy
+*/
+
+.features {
+
+     padding: 5%;
+     text-align: center;
+     margin: 50px 0 auto;
+}
+
+.features h1 {
+     font-family: 'Saira Condensed', sans-serif;
+     font-weight: bold;
+     font-size: 26px;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+}
+
+.features img {
+     width: 100%;
+     margin: 5 0;
+     max-width: 370px;
+}
+
+.features h2 {
+     font-family: 'Saira Condensed', sans-serif;
+     font-weight: bold;
+     font-size: 22px;
+     text-transform: uppercase;
+}
+
+.features p {
+     font-family: 'Saira Condensed', sans-serif;
+     font-weight: 300;
+     font-size: 12px;
+     text-transform: uppercase;
+     margin: 20px 0;
+}
+
+.portfolio {
+     background-color: black;
+     padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+     font-size: 28px;
+     font-family: 'Saira', sans-serif;
+     color: #fff;
+     text-align: center;
+     text-transform: uppercase;
+     padding: 10px 13px;
+     margin-bottom: 15px;
+     margin-bottom: 15px;
+}
+
+.portfolio .web img {
+     width: 100%;
+}
+
+.portfolio .about {
+     color: #fff;
+     ont-family: 'Saira', sans-serif;
+     font-weight: normal;
+
+     padding: 10px 20px 20px 0px;
+}
+
+.portfolio .about h2 {
+     font-size: 18px;
+     text-indent: 20px;
+     margin-bottom: 12px;
+     border-bottom: 2px solid #fff;
+}
+
+.portfolio .about p {
+     font-size: 12px;
+     padding-left: 20px;
+}
+
+.portfolio .project {
+     margin-bottom: 20px;
+}
+
+.portfolio .project:nth-last-of-type(odd) {
+     background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-last-of-type(even) {
+     background-color: #29a6dc;
+}
+
+
+/*
+Slogan
+*/
+
+section.motto {
+     text-align: center;
+     background-image: url(../images/motto.jpg);
+     background-size: cover;
+     background-position: top center;
+     background-attachment: fixed;
+     color: #fff;
+
+
+}
+
+.motto h1 {
+     font-size: 26px;
+     font-family: 'Saira Condesend', sans-serif;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+
+}
+
+.text {
+     font-family: 'Saira', sans-serif;
+     font-size: 18px;
+}
+
+.auto {
+     font-size: 12px;
+}
+
+.motto .bg1 {
+     background-color: rgba(35, 60, 147, 0.5);
+     padding: 30px 10px;
+
+}
+
+/*
+hobby
+*/
+
+.item {
+     height: 25vh;
+}
+
+.item p {
+     font-size: 20px;
+     font-family: 'Saira', sans-serif;
+     color: #fff;
+     padding: 5px 0;
+     text-align: center;
+     /*     line-height: 25vh;*/
+     text-shadow: 0 0 4px black;
+     background-color: rgba(0, 0, 0, .5);
+
+}
+
+.hobby h1 {
+     padding: 30px;
+     font-family: 'Saira condense', sans-serif;
+     text-align: center;
+     font-size: 36px;
+}
+
+.hobby .item:nth-of-type(1) {
+     background-image: url(../images/hobby1.jpg);
+     background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(2) {
+     background-image: url(../images/hobby2.jpg);
+     background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(3) {
+     background-image: url(../images/hobby3.jpg);
+     background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(4) {
+     background-image: url(../images/hobby4.jpg);
+     background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(4) {
+     background-image: url(../images/hobby4.jpg);
+     background-repeat: no-repeat;
+}
+
+/*
+     kontak*/
+
+.contact {
+     background-color: black;
+     padding: 30px 20px;
+}
+
+.contact h1 {
+     font-size: 26px;
+     color: #fff;
+     text-transform: uppercase;
+     font-family: 'Saria Condensend', sans-serif;
+     margin-bottom: 15px;
+     text-align: center;
+}
+
+.contact .wrap {
+     padding-top: 20px;
+     max-width: 1024px;
+     margin: 0 auto;
+}
+
+.form_size > * {
+     width: 100%;
+     margin-bottom: 25px;
+     font-family: saira, sans-serif;
+     font-size: 12px;
+}
+
+.contact input {
+
+     height: 36px;
+     padding: 5px;
+}
+
+.contact textarea {
+     height: 120px;
+}
+
+.contact button {
+     font-size: 14px;
+     line-height: 40px;
+     color: #fff;
+     background-color: black;
+     border: 2px solid white;
+}
+
+.socials {
+     margin-top: 40px;
+     font-size: 0;
+}
+
+.social {
+     padding: 10px 0;
+     color: white;
+     font-family: 'Saria Condensend', sans-serif;
+}
+
+.social img {
+     float: left
+}
+
+.social span {
+     line-height: 72px;
+     margin-left: 20px;
+     float: left;
+     font-size: 20px;
+}
+
+
+footer {
+     background-color: #29a6dc;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+     font-family: Saria, sans-serif;
+}
