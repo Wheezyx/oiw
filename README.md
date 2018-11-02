@@ -9,4 +9,3 @@ Simply binary clock for academy's classes schedule with HTML, CSS and JS.
 ### 2. Simpy website
 Website to practise html's tags and DOM model. Uploaded without images files.
 
-### 3. BurgerApp - WIP
